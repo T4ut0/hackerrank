@@ -45,15 +45,32 @@ public class Main {
         System.out.print("Rotated Array: ");
         arrays.printArray(rotatedArray);
 
-        // Test Case of New Year Chaos
+        System.out.println();
+
+        // Test Cases of New Year Chaos
         int[] testArrayForMinimumBribes1 = {2, 1, 5, 3, 4};
         arrays.minBribe(testArrayForMinimumBribes1);
+
         int[] testArrayForMinimumBribes2 = {1, 2, 5, 3, 4, 7, 8, 6};
         arrays.minBribe(testArrayForMinimumBribes2);
+
         int[] testArrayForMinimumBribes3 = {1, 2, 5, 3, 7, 8, 6, 4};
         arrays.minBribe(testArrayForMinimumBribes3);
+
         int[] testArrayForMinimumBribes4 = {5, 1, 2, 3, 7, 8, 6, 4};
         arrays.minBribe(testArrayForMinimumBribes4);
+
+        System.out.println();
+
+        //Test Case of Minimum Swaps 2
+        int[] testArrayForMinimumSwaps1 = {7,1,3,2,4,5,6};
+        System.out.println("Minimum Swaps: " + arrays.minimumSwaps(testArrayForMinimumSwaps1));
+
+        int[] testArrayForMinimumSwaps2 = {4,3,1,2};
+        System.out.println("Minimum Swaps: " + arrays.minimumSwaps(testArrayForMinimumSwaps2));
+
+        int[] testArrayForMinimumSwaps3 = {2,3,4,1,5};
+        System.out.println("Minimum Swaps: " + arrays.minimumSwaps(testArrayForMinimumSwaps3));
 
     }
 }

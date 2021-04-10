@@ -16,7 +16,7 @@ public class hackerrankArrays {
                 }
             }
         }
-        System.err.println(count);
+        System.out.println(count);
     }
 
     public int hourglassSum(int[][] arr) {
@@ -30,7 +30,7 @@ public class hackerrankArrays {
                 if (i >= rowCount - 2 || j >= columnCount - 2) {
                     continue;
                 } else {
-                    int currentSum = 0;
+                    int currentSum;
                     int firstRow = arr[i][j] + arr[i][j + 1] + arr[i][j + 2];
                     int secondRow = arr[i + 1][j + 1];
                     int thirdRow = arr[i + 2][j] + arr[i + 2][j + 1] + arr[i + 2][j + 2];
@@ -79,5 +79,20 @@ public class hackerrankArrays {
             a[i] = i + 1;
         }
         return a;
+    }
+
+    public int minimumSwaps(int[] arr) {
+        int swapCount = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == i+1) {
+                continue;
+            }
+            swapCount++;
+            int temp = arr[i];
+            arr[i] = arr[temp-1];
+            arr[temp-1] = temp;
+            i--;
+        }
+        return swapCount;
     }
 }
