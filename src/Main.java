@@ -1,3 +1,5 @@
+import javax.sound.midi.SysexMessage;
+
 /*
     This java program contains implementations of several exercises from Hackerrank. Objects are initialized based on their categories.
     Author: Tuna Cinsoy
@@ -62,7 +64,7 @@ public class Main {
 
         System.out.println();
 
-        //Test Case of Minimum Swaps 2
+        //Test Cases of Minimum Swaps 2
         int[] testArrayForMinimumSwaps1 = {7,1,3,2,4,5,6};
         System.out.println("Minimum Swaps: " + arrays.minimumSwaps(testArrayForMinimumSwaps1));
 
@@ -71,6 +73,19 @@ public class Main {
 
         int[] testArrayForMinimumSwaps3 = {2,3,4,1,5};
         System.out.println("Minimum Swaps: " + arrays.minimumSwaps(testArrayForMinimumSwaps3));
+
+        System.out.println();
+
+        //Test Cases for Array Manipulation
+        int[][] testArrayForArrayManipulation1 = {
+                {1,2,100},{2,5,100},{3,4,100}
+        };
+        System.out.println(arrays.arrayManipulation(5,testArrayForArrayManipulation1));
+        int[][] testArrayForArrayManipulation2 = {
+                {1,5,3},{4,8,7},{6,9,1}
+        };
+        System.out.println(arrays.arrayManipulation(10,testArrayForArrayManipulation2));
+
 
     }
 }
