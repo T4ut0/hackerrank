@@ -85,6 +85,16 @@ public class Main {
                 {1,5,3},{4,8,7},{6,9,1}
         };
         System.out.println(arrays.arrayManipulation(10,testArrayForArrayManipulation2));
+        System.out.println();
+
+        // --- DICTIONARIES & HASHMAPS ---
+        hackerrankDictionariesHashmaps dictHash = new hackerrankDictionariesHashmaps();
+        System.out.println("DICTIONARIES & HASHMAPS:");
+
+        String[] magazine1 = {"two times three is not four"};
+        String[] note1 = {"two times two is four"};
+        dictHash.checkMagazine(magazine1,note1);
+
 
 
     }
