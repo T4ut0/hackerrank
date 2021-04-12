@@ -94,8 +94,11 @@ public class Main {
         String[] magazine1 = {"two times three is not four"};
         String[] note1 = {"two times two is four"};
         dictHash.checkMagazine(magazine1,note1);
+        System.out.println();
 
-
+        String s1 = "ok";
+        String s2 = "pil";
+        dictHash.twoStrings(s1,s2);
 
     }
 }

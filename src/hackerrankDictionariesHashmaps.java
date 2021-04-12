@@ -33,4 +33,33 @@ public class hackerrankDictionariesHashmaps {
         System.out.println("Yes");
 
     }
+
+    public void twoStrings(String s1, String s2) {
+        HashMap<Character, Integer> helper = new HashMap<Character, Integer>();
+        if (s1.length() >= s2.length()) {
+            for (int i = 0; i < s1.length(); i++) {
+                helper.put(s1.charAt(i), 0);
+            }
+            for (int i = 0; i < s2.length(); i++) {
+                if (helper.containsKey(s2.charAt(i))) {
+                    System.out.println("Yes");
+                    return;
+                }
+            }
+            System.out.println("No");
+            return;
+        } else {
+            for (int i = 0; i < s2.length(); i++) {
+                helper.put(s2.charAt(i), 0);
+            }
+            for (int i = 0; i < s1.length(); i++) {
+                if (helper.containsKey(s1.charAt(i))) {
+                    System.out.println("Yes");
+                    return;
+                }
+            }
+            System.out.println("No");
+            return;
+        }
+    }
 }
